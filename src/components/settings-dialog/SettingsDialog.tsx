@@ -15,6 +15,7 @@ import {
 } from "@google/generative-ai";
 import VoiceSelector from "./VoiceSelector";
 import ResponseModalitySelector from "./ResponseModalitySelector";
+import LanguageSelector from "./LanguageSelector";
 
 export default function SettingsDialog() {
   const [open, setOpen] = useState(false);
@@ -97,6 +98,7 @@ export default function SettingsDialog() {
           <div className="mode-selectors">
             <ResponseModalitySelector />
             <VoiceSelector />
+            <LanguageSelector />
           </div>
 
           <h3>System Instructions</h3>
